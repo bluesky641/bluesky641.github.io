@@ -17,7 +17,7 @@
       <pubDate>Sun, 12 Jul 2020 23:21:46 +0800</pubDate>
       
       <guid>http://bluesky641.github.io/post/first/</guid>
-      <description>mkdocs](https://markdown-docs-zh.readthedocs.io/zh_CN/latest/user-guide/configuration/)使用方法记录 视频教程Bilibili&amp;mdash;-&amp;gt;up主	正月点灯笼（用python和mkdocs制作简易个人网站）
+      <description>mkdocs使用方法记录 视频教程Bilibili&amp;mdash;-&amp;gt;up主	正月点灯笼（用python和mkdocs制作简易个人网站）
  1.安装 首先需要确保有python环境
 Ubuntu下安装：
 apt-get install mkdocs
