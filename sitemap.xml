@@ -3,36 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bluesky641.github.io/</loc>
-    <lastmod>2020-07-13T10:40:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluesky641.github.io/post/</loc>
-    <lastmod>2020-07-13T10:40:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluesky641.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2020-07-13T10:40:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bluesky641.github.io/post/first/</loc>
+    <loc>http://bluesky641.github.io/</loc>
     <lastmod>2020-07-12T23:21:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bluesky641.github.io/about/</loc>
+    <loc>http://bluesky641.github.io/post/first/</loc>
+    <lastmod>2020-07-12T23:21:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bluesky641.github.io/post/</loc>
+    <lastmod>2020-07-12T23:21:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://bluesky641.github.io/about/</loc>
     <lastmod>2020-07-12T23:21:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bluesky641.github.io/categories/</loc>
+    <loc>http://bluesky641.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://bluesky641.github.io/tags/</loc>
+    <loc>http://bluesky641.github.io/tags/</loc>
   </url>
   
 </urlset>

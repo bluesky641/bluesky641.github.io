@@ -2,30 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on bluesky641</title>
-    <link>https://bluesky641.github.io/post/</link>
+    <link>http://bluesky641.github.io/post/</link>
     <description>Recent content in Posts on bluesky641</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2020 10:40:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 23:21:46 +0800</lastBuildDate>
     
-	<atom:link href="https://bluesky641.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://bluesky641.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>第一篇文章</title>
-      <link>https://bluesky641.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
-      <pubDate>Mon, 13 Jul 2020 10:40:00 +0800</pubDate>
-      
-      <guid>https://bluesky641.github.io/post/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
-      <description>这是我的第一篇文章 </description>
-    </item>
     
     <item>
-      <title>First</title>
-      <link>https://bluesky641.github.io/post/first/</link>
+      <title>mkdocs 搭建网站</title>
+      <link>http://bluesky641.github.io/post/first/</link>
       <pubDate>Sun, 12 Jul 2020 23:21:46 +0800</pubDate>
       
-      <guid>https://bluesky641.github.io/post/first/</guid>
+      <guid>http://bluesky641.github.io/post/first/</guid>
       <description>mkdocs使用方法记录 视频教程Bilibili&amp;mdash;-&amp;gt;up主	正月点灯笼（用python和mkdocs制作简易个人网站）
  1.安装 首先需要确保有python环境
 Ubuntu下安装：
