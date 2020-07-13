@@ -17,7 +17,7 @@
       <pubDate>Sun, 12 Jul 2020 23:21:46 +0800</pubDate>
       
       <guid>http://bluesky641.github.io/post/first/</guid>
-      <description>mkdocs使用方法记录 视频教程Bilibili&amp;mdash;-&amp;gt;up主	正月点灯笼（用python和mkdocs制作简易个人网站）
+      <description>mkdocs](https://markdown-docs-zh.readthedocs.io/zh_CN/latest/user-guide/configuration/)使用方法记录 视频教程Bilibili&amp;mdash;-&amp;gt;up主	正月点灯笼（用python和mkdocs制作简易个人网站）
  1.安装 首先需要确保有python环境
 Ubuntu下安装：
 apt-get install mkdocs
@@ -25,8 +25,8 @@ apt-get install mkdocs
   文件结构
   mysite文件夹
  index.md    mkdocs.yml配置文件
-复制以下代码到文件末尾，就可以支持数学公式操作，了解更多请搜索 MathJax: 让前端支持数学公式 
-  &amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#39;\\(&amp;#39;,&amp;#39;\\)&amp;#39;]]} }); &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   3.启动 mkdocs serve
+    复制以下代码到你的博客文件末尾，就可以支持数学公式操作，了解更多请搜索 MathJax: 让前端支持数学公式 
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&amp;#34;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/x-mathjax-config&amp;#34;&amp;gt; MathJax.Hub.Config({ tex2jax: {inlineMath: [[&amp;#39;$&amp;#39;,&amp;#39;$&amp;#39;], [&amp;#39;\\(&amp;#39;,&amp;#39;\\)&amp;#39;]]} }); &amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; async src=&amp;#34;path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 3.启动 mkdocs serve
 4.部署 mkdocs build
 会生成一个site文件夹，可以打包上传到免费服务器网站
 如：BitBalloon 或 GithubPage</description>
