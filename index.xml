@@ -43,5 +43,26 @@ apt-get install mkdocs
 我的GitHub</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://bluesky641.github.io/post/vim%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://bluesky641.github.io/post/vim%E7%AC%94%E8%AE%B0/</guid>
+      <description>vim使用笔记  vim如何添加插件？ 安装 vim-plug vim插件管理器 谷歌搜索vim plug，进入GitHub界面，对于Linux系统，复制命令
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim搭建框架 打开 .vimrc 文件，在最末尾添加
+call plug#begin()call plug#end()之后就可以在中间添加需要的插件
+添加插件 谷歌搜索vim awesome，里面有很多vim的插件，也有安装方法
+举例，比如要安装nerdtree，点击它，复制
+Plugin &#39;scrooloose/nerdtree&#39;然后粘贴到框架中间，在vim下的命令行执行命令
+PlugInstall插件就安装好了
+删除插件 把刚才那句话注释或删除(自动加载插件语句也要删除)，在vim命令行执行命令
+PlugClean如何使用NERDTree 可以使用命令
+help NERDTree.txt查看帮助文档
+基本命令 &amp;quot;打开NERDTree&amp;quot;NREDTree实现每次打开文件自动加载NERDTree
+在 .vimrc 文件末尾添加
+autocmd VimEnter * NERDTree基本操作 Ctrl ww	//在目录树和文件之间和多个文件之间切换？	//光标停在目录树，打 ？ 显示帮助i //垂直排列打开文件s //水平排列打开文件I //打开隐藏文件q //退出NERDTreeA //最大、最小化目录树  白嫖别人的 vimrc 网站	GitHub</description>
+    </item>
+    
   </channel>
 </rss>
