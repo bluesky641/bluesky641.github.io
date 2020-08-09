@@ -33,9 +33,9 @@ apt-get install mkdocs
     </item>
     
     <item>
-      <title></title>
+      <title>vim 使用笔记</title>
       <link>http://bluesky641.github.io/post/vim%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 12 Jul 2020 23:21:46 +0800</pubDate>
       
       <guid>http://bluesky641.github.io/post/vim%E7%AC%94%E8%AE%B0/</guid>
       <description>vim使用笔记  vim如何添加插件？ 安装 vim-plug vim插件管理器 谷歌搜索vim plug，进入GitHub界面，对于Linux系统，复制命令
