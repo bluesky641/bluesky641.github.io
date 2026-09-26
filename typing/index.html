@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打字练英语</title>
+  <link rel="stylesheet" href="style.css?v=13">
+</head>
+<body>
+  <div class="app">
+    <!-- 顶部标题 -->
+    <header class="header">
+      <h1 class="logo">⌨️ 打字练英语</h1>
+      <p class="subtitle">边打字边记单词，打错即时提醒</p>
+    </header>
+
+    <!-- 词库切换 -->
+    <nav class="category-bar" id="categoryBar">
+      <button class="cat-btn active" data-cat="cet4">四级词汇</button>
+      <button class="cat-btn" data-cat="cet6">六级词汇</button>
+      <button class="cat-btn" data-cat="kaoyan">考研词汇</button>
+      <button class="cat-btn" data-cat="ielts">雅思词汇</button>
+      <button class="cat-btn" data-cat="toeic">托业词汇</button>
+      <button class="cat-btn" data-cat="sentences">常用语句</button>
+    </nav>
+
+    <!-- 统计栏 -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">进度</span>
+        <span class="stat-value" id="statProgress">0 / 0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">正确率</span>
+        <span class="stat-value" id="statAccuracy">100%</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">错误次数</span>
+        <span class="stat-value error" id="statErrors">0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">用时</span>
+        <span class="stat-value" id="statTime">00:00</span>
+      </div>
+    </div>
+
+    <!-- 进度条 -->
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- 练习卡片 -->
+    <main class="card" id="card">
+      <!-- 隐藏输入框：用于唤起手机虚拟键盘 -->
+      <input id="mobileInput" class="mobile-input" type="text"
+             autocomplete="off" autocorrect="off" autocapitalize="none"
+             spellcheck="false" enterkeyhint="go">
+      <!-- 中文释义 / 句意 -->
+      <div class="meaning" id="meaning">准备中…</div>
+
+      <!-- 英文输入显示区 -->
+      <div class="word-display" id="wordDisplay"></div>
+
+      <!-- 提示区 -->
+      <div class="hint-row">
+        <span class="hint-text" id="hintText">根据上方中文，输入英文</span>
+      </div>
+
+      <!-- 操作按钮 -->
+      <div class="actions">
+        <button class="action-btn" id="btnSpeak" title="播放发音 (Tab)">
+          <span class="icon">🔊</span> 发音
+        </button>
+        <button class="action-btn" id="btnToggleHint" title="显示/隐藏英文 (Esc)">
+          <span class="icon">👁</span> <span id="toggleHintLabel">隐藏英文</span>
+        </button>
+        <button class="action-btn" id="btnSkip" title="跳过本题 (Ctrl+→)">
+          <span class="icon">⏭</span> 跳过
+        </button>
+        <button class="action-btn" id="btnRestart" title="重新开始">
+          <span class="icon">🔄</span> 重练
+        </button>
+        <button class="action-btn" id="btnImport" title="导入词库">
+          <span class="icon">📥</span> 导入词库
+        </button>
+        <button class="action-btn" id="btnWordList" title="查看/搜索单词表">
+          <span class="icon">📖</span> 单词表
+        </button>
+      </div>
+    </main>
+
+    <!-- 完成面板 -->
+    <div class="finish-panel hidden" id="finishPanel">
+      <div class="finish-emoji">🎉</div>
+      <h2>本轮练习完成！</h2>
+      <div class="finish-stats" id="finishStats"></div>
+      <button class="action-btn primary" id="btnAgain">再来一轮</button>
+    </div>
+
+    <!-- 导入词库弹窗 -->
+    <div class="modal hidden" id="importModal">
+      <div class="modal-mask"></div>
+      <div class="modal-box">
+        <h3>📥 导入词库 / 语句</h3>
+        <p class="modal-desc">
+          每行一条，格式：<code>英文 中文释义</code>（用空格、Tab、等号或逗号分隔均可）。<br>
+          常用语句的英文里可以包含空格。导入到当前选中的分类。
+        </p>
+        <textarea id="importTextarea" placeholder="abandon 放弃&#10;ability 能力&#10;We didn't do it because you were away 因为你不在，我们没进行。"></textarea>
+        <div class="import-result" id="importResult"></div>
+        <div class="modal-actions">
+          <button class="action-btn" id="btnImportCancel">取消</button>
+          <button class="action-btn primary" id="btnImportConfirm">导入到当前分类</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 单词表弹窗 -->
+    <div class="modal hidden" id="wordListModal">
+      <div class="modal-mask"></div>
+      <div class="modal-box list-box">
+        <h3>📖 <span id="wordListCat">单词表</span></h3>
+        <input id="wordListSearch" type="text" placeholder="搜索英文或中文释义…" autocomplete="off">
+        <div class="word-list-count" id="wordListCount"></div>
+        <div class="word-list" id="wordListContainer"></div>
+        <div class="modal-actions">
+          <button class="action-btn" id="btnRestoreDeleted" title="恢复本分类所有被删除的词条">恢复已删除</button>
+          <button class="action-btn" id="btnWordListClose">关闭</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a class="home-link" href="../">← 个人主页</a>
+      <span>Tab 发音 · Esc 显示/隐藏英文 · 打错字母会标红抖动提醒</span>
+    </footer>
+  </div>
+
+  <script src="data.js?v=13"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>

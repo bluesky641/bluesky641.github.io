@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bluesky641 · 个人主页</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1d29 0%, #232936 55%, #1d2a26 100%);
+      color: #e8ecf3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .home {
+      width: 100%;
+      max-width: 640px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-top: 22px;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .desc {
+      margin-top: 10px;
+      color: #9aa5b5;
+      font-size: 15px;
+    }
+
+    .cards {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 18px;
+      padding: 22px 26px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.22s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(120, 160, 255, 0.45);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .card .icon {
+      font-size: 34px;
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      flex-shrink: 0;
+    }
+
+    .card .info { flex: 1; }
+
+    .card .name {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .card .sub {
+      margin-top: 5px;
+      color: #9aa5b5;
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .card .arrow {
+      color: #6d7a8d;
+      font-size: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover .arrow {
+      transform: translateX(4px);
+      color: #9db8ff;
+    }
+
+    .footer {
+      margin-top: 44px;
+      color: #5f6b7d;
+      font-size: 12.5px;
+    }
+
+    .footer a {
+      color: #8fa3c8;
+      text-decoration: none;
+    }
+
+    .footer a:hover { color: #c3d4f5; }
+  </style>
+</head>
+<body>
+  <main class="home">
+    <img class="avatar" src="avatar.jpg" alt="avatar">
+    <h1>bluesky641</h1>
+    <p class="desc">Keep typing, keep learning.</p>
+
+    <div class="cards">
+      <a class="card" href="./typing/">
+        <span class="icon">⌨️</span>
+        <span class="info">
+          <span class="name">打字练英语</span>
+          <span class="sub">四六级 / 考研 / 雅思 / 托业词汇 + 5000 常用语句，逐词打字练习，错误实时提醒</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="card" href="https://github.com/bluesky641" target="_blank" rel="noopener">
+        <span class="icon">🐱</span>
+        <span class="info">
+          <span class="name">GitHub</span>
+          <span class="sub">github.com/bluesky641</span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <footer class="footer">© bluesky641 · Powered by GitHub Pages</footer>
+  </main>
+</body>
+</html>
